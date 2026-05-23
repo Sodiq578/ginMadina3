@@ -143,7 +143,44 @@
         }
 
 
- 
+ .date__inner-title{
+    font-size: 56px;
+    line-height: 1.1;
+    font-weight: 900;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.red-text{
+    color: #ff1f1f;
+}
+
+.hero-text{
+    font-size: 28px;
+    line-height: 1.5;
+    color: #111;
+    font-weight: 500;
+}
+
+.hero-text p{
+    margin-bottom: 12px;
+}
+
+/* Telefon uchun */
+@media(max-width:768px){
+    .date__inner-title{
+        font-size: 30px;
+    }
+
+    .hero-text{
+        font-size: 20px;
+    }
+    
+    .yellow-text {
+        font-size: 34px;
+    }
+}
    
 
         .date__inner-title span {
@@ -153,6 +190,67 @@
             font-weight: 900;
             
         }
+
+
+
+
+
+
+
+
+
+
+
+.hero-text{
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto 25px;
+    position: relative;
+    z-index: 30;
+}
+
+.hero-text p{
+    font-size: 20px;
+    line-height: 1.45;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    letter-spacing: 0.2px;
+}
+
+.hero-text p::before{
+    content: "•";
+    color: #b91c1b;
+    font-size: 28px;
+    line-height: 1;
+    margin-top: -2px;
+    font-weight: 900;
+}
+
+.hero-text p:last-child{
+    margin-bottom: 0;
+}
+
+/* Mobile */
+@media(max-width:768px){
+    .hero-text{
+        margin-bottom: 20px;
+    }
+
+    .hero-text p{
+        font-size: 18px;
+        line-height: 1.4;
+        gap: 8px;
+    }
+
+    .hero-text p::before{
+        font-size: 24px;
+    }
+}
+
         .center {
             width: 100%;
             padding-top: 0px;
@@ -168,7 +266,7 @@
             line-height: 19px;
             margin-bottom: 2px;
             font-weight: 700;
-            color: white;
+          
             margin-right: auto;
             text-align: left !important;
         }
@@ -455,10 +553,15 @@
             </div>
     <div class="container date__container">
 <h1 class="date__inner-title" style="display: block;">
-    MIJOZIMNI <span>-45KG GACHA</span><br>
-    VAZN YO‘QOTGAN USULNI<br>
-    <span class="yellow-text">BEPULGA</span> O‘RGATAMAN
+    SIYDIK <span class="yellow-text red-text">TUTIB TURA</span><br>
+    OLMASLIK MUAMMOSIDAN<br>
+    <span class="yellow-text red-text">QUTULING!</span>
 </h1>
+
+<!-- <div class="hero-text">
+    <p>— Yo‘talganingizda yoki aksa urganda siydik chiqib ketadimi?</p>
+    <p>— Jinsiy hayotda zavq kamayganmi?</p>
+</div> -->
         <div class="center">
             <h2 class="date__inner-list-title">Masterklassda siz:</h2>
             <ul class="date__inner-list">
