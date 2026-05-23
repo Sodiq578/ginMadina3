@@ -17,7 +17,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap"
         rel="stylesheet">
     <!-- Meta Pixel Code -->
-   <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -42,15 +41,11 @@ src="https://www.facebook.com/tr?id=994529509292030&ev=PageView&noscript=1"
         }
 
         body {
-
             font-family: 'Montserrat', sans-serif;
             font-weight: 400;
         }
 
-        a,
-        li,
-        ol,
-        ul {
+        a, li, ol, ul {
             list-style: none;
             text-decoration: none;
         }
@@ -64,11 +59,9 @@ src="https://www.facebook.com/tr?id=994529509292030&ev=PageView&noscript=1"
 
         .date {
             padding: 16px 0 91px;
-
             color: #fff;
             overflow: hidden;
             min-height: 100vh;
-
         }
 
         .date__container {
@@ -111,7 +104,6 @@ src="https://www.facebook.com/tr?id=994529509292030&ev=PageView&noscript=1"
                 font-size: 33px;
                 line-height: 0.95;
             }
-
             .date__inner-title span {
                 font-size: 38px;
             }
@@ -139,8 +131,6 @@ src="https://www.facebook.com/tr?id=994529509292030&ev=PageView&noscript=1"
             height: 11px;
             border-radius: 50%;
             margin-right: 5px;
-
-            /* Animatsiya */
             animation: pulseDot 1s infinite;
             box-shadow: 0 0 0 rgba(217, 5, 8, 0.7);
         }
@@ -151,13 +141,11 @@ src="https://www.facebook.com/tr?id=994529509292030&ev=PageView&noscript=1"
                 opacity: 1;
                 box-shadow: 0 0 0 0 rgba(217, 5, 8, 0.7);
             }
-
             50% {
                 transform: scale(1.4);
                 opacity: 0.7;
                 box-shadow: 0 0 10px 8px rgba(217, 5, 8, 0);
             }
-
             100% {
                 transform: scale(1);
                 opacity: 1;
@@ -185,7 +173,6 @@ src="https://www.facebook.com/tr?id=994529509292030&ev=PageView&noscript=1"
             flex-wrap: wrap;
         }
 
-
         .date__inner-title {
             font-size: 56px;
             line-height: 1.1;
@@ -210,39 +197,24 @@ src="https://www.facebook.com/tr?id=994529509292030&ev=PageView&noscript=1"
             margin-bottom: 12px;
         }
 
-        /* Telefon uchun */
         @media(max-width:768px) {
             .date__inner-title {
                 font-size: 30px;
             }
-
             .hero-text {
                 font-size: 20px;
             }
-
             .yellow-text {
                 font-size: 34px;
             }
         }
-
 
         .date__inner-title span {
             color: #F8D12E;
             font-size: clamp(24px, 8vw, 28px);
             margin-left: 5px;
             font-weight: 900;
-
         }
-
-
-
-
-
-
-
-
-
-
 
         .hero-text {
             width: 100%;
@@ -277,18 +249,15 @@ src="https://www.facebook.com/tr?id=994529509292030&ev=PageView&noscript=1"
             margin-bottom: 0;
         }
 
-        /* Mobile */
         @media(max-width:768px) {
             .hero-text {
                 margin-bottom: 20px;
             }
-
             .hero-text p {
                 font-size: 18px;
                 line-height: 1.4;
                 gap: 8px;
             }
-
             .hero-text p::before {
                 font-size: 24px;
             }
@@ -310,7 +279,6 @@ src="https://www.facebook.com/tr?id=994529509292030&ev=PageView&noscript=1"
             line-height: 19px;
             margin-bottom: 2px;
             font-weight: 700;
-
             margin-right: auto;
             text-align: left !important;
         }
@@ -330,11 +298,10 @@ src="https://www.facebook.com/tr?id=994529509292030&ev=PageView&noscript=1"
 
         .date__inner-item {
             font-family: Montserrat, sans-serif;
-            font-size: 12px;
+            font-size: 11px;
             line-height: 19px;
             font-weight: 600;
             color: #333232;
-
         }
 
         .date__inner-item span {
@@ -419,7 +386,6 @@ src="https://www.facebook.com/tr?id=994529509292030&ev=PageView&noscript=1"
         }
 
         .gradient {
-
             width: 200%;
             left: -50%;
             height: 254px;
@@ -433,369 +399,164 @@ src="https://www.facebook.com/tr?id=994529509292030&ev=PageView&noscript=1"
                 transform: scale(1, 1);
                 animation-timing-function: ease-in-out;
             }
-
             50% {
                 transform: scale(1.03, 1.03);
                 animation-timing-function: ease-in-out;
             }
-
             100% {
                 transform: scale(1, 1);
             }
         }
 
-        /* Modal Styles */
         .modal {
             display: none;
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
             z-index: 9999;
-            background: rgba(0, 0, 0, 0.85);
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
             overflow-y: auto;
-            -webkit-overflow-scrolling: touch;
         }
 
         .modal-content {
-            background: #fff;
-            margin: 15px;
-            padding: 20px 18px;
-            border-radius: 12px;
+            width: 100%;
+            max-width: 420px;
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 26px 20px 22px;
             position: relative;
-            max-width: 380px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+            animation: modalShow 0.25s ease-out;
+        }
+
+        @keyframes modalShow {
+            from {
+                transform: translateY(20px) scale(0.96);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
         }
 
         .close {
             position: absolute;
-            top: 8px;
-            right: 8px;
-            background: #f0f0f0;
-            border: none;
-            width: 32px;
-            height: 32px;
+            top: 10px;
+            right: 10px;
+            width: 36px;
+            height: 36px;
             border-radius: 50%;
+            border: none;
+            background: #f2f2f2;
             font-size: 22px;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            line-height: 1;
-            transition: background 0.2s;
+            transition: 0.2s ease;
         }
 
         .close:hover {
-            background: #ddd;
+            background: #e0e0e0;
+            transform: rotate(90deg);
         }
 
         .modal-title {
-            font-size: 22px;
-            font-weight: 700;
+            font-size: 20px;
+            font-weight: 800;
             text-align: center;
-            margin-bottom: 6px;
             color: #1a1a1a;
-        }
-
-        .modal-sub {
-            text-align: center;
-            color: #666;
-            margin-bottom: 18px;
-            font-size: 13px;
+            margin-bottom: 8px;
+            line-height: 1.3;
         }
 
         .btn {
             width: 100%;
+            margin-top: 12px;
+            padding: 15px;
+            border-radius: 50px;
+            border: none;
             background: linear-gradient(135deg, #9b1121, #d41633);
             color: #fff;
-            border: none;
-            padding: 16px 18px;
-            font-size: 23px;
-            font-weight: 700;
-            border-radius: 50px;
-            cursor: pointer;
+            font-size: 18px;
+            font-weight: 800;
             text-transform: uppercase;
-            letter-spacing: .3px;
-            box-shadow: 0 4px 15px rgba(155, 17, 33, .35);
-            margin: 12px 0;
-            display: block;
-            text-align: center;
-            touch-action: manipulation;
+            cursor: pointer;
+            transition: 0.2s ease;
+            box-shadow: 0 10px 25px rgba(155, 17, 33, 0.3);
         }
 
         .btn:active {
-            transform: scale(.97);
-        }
-
-        .form-group {
-            margin-bottom: 12px;
-        }
-
-        label {
-            display: block;
-            font-size: 13px;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 5px;
+            transform: scale(0.97);
         }
 
         input {
             width: 100%;
-            padding: 12px 10px;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
+            padding: 14px 12px;
+            border: 2px solid #e6e6e6;
+            border-radius: 10px;
             font-size: 16px;
-            -webkit-appearance: none;
-            font-family: inherit;
+            outline: none;
+            transition: 0.2s ease;
         }
 
         input:focus {
-            outline: none;
             border-color: #9b1121;
-            box-shadow: 0 0 0 3px rgba(155, 17, 33, .1);
+            box-shadow: 0 0 0 3px rgba(155, 17, 33, 0.15);
         }
 
         .error {
             color: #d32f2f;
-            font-size: 11px;
-            margin-top: 3px;
+            font-size: 12px;
+            margin-top: 5px;
             display: none;
         }
 
-        .form-note {
-            text-align: center;
-            font-size: 11px;
-            color: #999;
-            margin-top: 10px;
-        }
-
-        @media screen and (max-width: 480px) {
+        @media (max-width: 480px) {
             .date {
                 padding: 20px 0 60px;
             }
-
-
             .date__img {
                 width: 180px;
                 height: 260px;
                 right: -20px;
                 top: -20px;
             }
-
             .speaker__gradient {
                 width: 200px;
                 height: 220px;
                 top: 20px;
             }
-
             .modal-content {
-                padding: 30px 16px 20px;
-                margin-top: 30px;
+                padding: 22px 16px;
+                border-radius: 14px;
             }
-
+            .modal-title {
+                font-size: 18px;
+            }
             .btn {
-                font-size: 20px;
+                font-size: 16px;
                 padding: 14px;
             }
-
-
-
-            @font-face {
-                font-family: "Big Shoulders Display";
-                src: local('Arial');
-            }
-
-
-
-
-
-
-            @font-face {
-                font-family: 'Montserrat';
-                src: local('Segoe UI'), local('Roboto');
-                font-display: swap;
-            }
-
             .date__inner-item b {
-                font-weight: 800;
                 color: #000;
+                font-weight: 700;
             }
-
-
-            .date__inner-item b {
-    color: #000;
-    font-weight: 700;
-}
-
-.date__inner-item {
-    line-height: 1.6;
-}
+            .date__inner-item {
+                line-height: 1.6;
+            }
         }
-
-
-        /* ===================== MODAL BACKDROP ===================== */
-.modal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.75);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    z-index: 9999;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 15px;
-    overflow-y: auto;
-}
-
-/* ===================== MODAL BOX ===================== */
-.modal-content {
-    width: 100%;
-    max-width: 420px;
-    background: #ffffff;
-    border-radius: 18px;
-    padding: 26px 20px 22px;
-    position: relative;
-
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
-    animation: modalShow 0.25s ease-out;
-}
-
-/* ===================== ANIMATION ===================== */
-@keyframes modalShow {
-    from {
-        transform: translateY(20px) scale(0.96);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0) scale(1);
-        opacity: 1;
-    }
-}
-
-/* ===================== CLOSE BUTTON ===================== */
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-
-    border: none;
-    background: #f2f2f2;
-    font-size: 22px;
-    cursor: pointer;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    transition: 0.2s ease;
-}
-
-.close:hover {
-    background: #e0e0e0;
-    transform: rotate(90deg);
-}
-
-/* ===================== TITLE ===================== */
-.modal-title {
-    font-size: 20px;
-    font-weight: 800;
-    text-align: center;
-    color: #1a1a1a;
-    margin-bottom: 8px;
-    line-height: 1.3;
-}
-
-.modal-sub {
-    text-align: center;
-    font-size: 13px;
-    color: #666;
-    margin-bottom: 16px;
-}
-
-/* ===================== INPUT ===================== */
-input {
-    width: 100%;
-    padding: 14px 12px;
-    border: 2px solid #e6e6e6;
-    border-radius: 10px;
-    font-size: 16px;
-    outline: none;
-    transition: 0.2s ease;
-}
-
-input:focus {
-    border-color: #9b1121;
-    box-shadow: 0 0 0 3px rgba(155, 17, 33, 0.15);
-}
-
-/* ===================== BUTTON ===================== */
-.btn {
-    width: 100%;
-    margin-top: 12px;
-
-    padding: 15px;
-    border-radius: 50px;
-    border: none;
-
-    background: linear-gradient(135deg, #9b1121, #d41633);
-    color: #fff;
-
-    font-size: 18px;
-    font-weight: 800;
-    text-transform: uppercase;
-
-    cursor: pointer;
-    transition: 0.2s ease;
-    box-shadow: 0 10px 25px rgba(155, 17, 33, 0.3);
-}
-
-.btn:active {
-    transform: scale(0.97);
-}
-
-/* ===================== ERROR ===================== */
-.error {
-    color: #d32f2f;
-    font-size: 12px;
-    margin-top: 5px;
-    display: none;
-}
-
-/* ===================== MOBILE ===================== */
-@media (max-width: 480px) {
-    .modal-content {
-        padding: 22px 16px;
-        border-radius: 14px;
-    }
-
-    .modal-title {
-        font-size: 18px;
-    }
-
-    .btn {
-        font-size: 16px;
-        padding: 14px;
-    }
-}
     </style>
 </head>
 
 <body>
     <div class="date">
-        <div class="date__top registerBtn">
+        <div class="date__top">
             <div class="date__top-left">
                 <div class="date__top-left-dot"></div>
                 <h4 class="date__top-left-title">2–3–4 Iyun | 20:00 da</h4>
@@ -808,359 +569,281 @@ input:focus {
                 <span class="yellow-text red-text">QUTULING!</span>
             </h1>
 
-            <!-- <div class="hero-text">
-    <p>— Yo‘talganingizda yoki aksa urganda siydik chiqib ketadimi?</p>
-    <p>— Jinsiy hayotda zavq kamayganmi?</p>
-</div> -->
-         <div class="center">
-    <h2 class="date__inner-list-title">Masterklassda siz:</h2>
+            <div class="center">
+                <h2 class="date__inner-list-title">Masterklassda siz:</h2>
 
-    <ul class="date__inner-list">
+                <ul class="date__inner-list">
+                    <li class="date__inner-item">
+                        <b>- Siydik tutolmaslik, qin kengayishi</b> sababi va natijaga olib chiqadigan
+                        <b>100% tabiiy yo‘l</b> haqida bilib olasiz.
+                    </li>
+                    <li class="date__inner-item">
+                        <b>- Matka tushishi</b> va <b>bachadon bilan bog‘liq muammolar</b> uchun
+                        <b>tabiiy yechimlar</b>ni o‘rganasiz.
+                    </li>
+                    <li class="date__inner-item">
+                        <b>- Aloqa sifati</b> va <b>libidoni oshirish</b>ning
+                        <b>tabiiy sirlarini</b> bilib olasiz.
+                    </li>
+                    <li class="date__inner-item">
+                        <b>- Er-xotin munosabatidagi sovuqlik</b> ildizini o‘rganib,
+                        <b>iliqlikni qaytarish</b> va
+                        <b>qimmatbaho sovg‘alarga ko‘milish sirlarini</b> o‘rganasiz.
+                    </li>
+                </ul>
 
-        <li class="date__inner-item">
-            <b>- Siydik tutolmaslik, qin kengayishi</b> sababi va natijaga olib chiqadigan
-            <b>100% tabiiy yo‘l</b> haqida bilib olasiz.
-        </li>
+                <img src="./madina.png" alt="Madina Junaydullayevna - Intim gimnastika koach-trener"
+                    class="date__img only_tablet" width="228" height="332">
 
-        <li class="date__inner-item">
-            <b>- Matka tushishi</b> va <b>bachadon bilan bog‘liq muammolar</b> uchun
-            <b>tabiiy yechimlar</b>ni o‘rganasiz.
-        </li>
+                <div class="speaker__gradient"></div>
 
-        <li class="date__inner-item">
-            <b>- Aloqa sifati</b> va <b>libidoni oshirish</b>ning
-            <b>tabiiy sirlarini</b> bilib olasiz.
-        </li>
+                <div class="flex">
+                    <button style="animation: pulse 1.2s infinite ease-in-out;"
+                        class="date__bottom-btn registerBtn"
+                        type="button"
+                        aria-label="Bepul qatnashish">
+                        🎁 <b>BEPUL QATNASHISH</b>
+                    </button>
 
-        <li class="date__inner-item">
-            <b>- Er-xotin munosabatidagi sovuqlik</b> ildizini o‘rganib,
-            <b>iliqlikni qaytarish</b> va
-            <b>qimmatbaho sovg‘alarga ko‘milish sirlarini</b> o‘rganasiz.
-        </li>
+                    <div class="timer" role="timer">
+                        <div class="timer-display" id="timer" aria-live="polite">00:00</div>
+                    </div>
+                </div>
 
-    </ul>
-
-    <img src="./madina.png" alt="Madina Junaydullayevna - Intim gimnastika koach-trener"
-        class="date__img only_tablet" width="228" height="332">
-
-    <div class="speaker__gradient"></div>
-
-    <div class="flex">
-        <button style="animation: pulse 1.2s infinite ease-in-out;"
-            class="date__bottom-btn registerBtn"
-            type="button"
-            aria-label="Bepul qatnashish">
-            🎁 <b>BEPUL QATNASHISH</b>
-        </button>
-
-        <div class="timer" role="timer">
-            <div class="timer-display" id="timer" aria-live="polite">00:00</div>
+                <div class="gradient"></div>
+            </div>
         </div>
     </div>
 
-    <div class="gradient"></div>
-</div>
-        </div>
-    </div>
-
-    <!-- Registration Modal -->
-    <!-- MODAL -->
+    <!-- MODAL - FAQAT TELEFON RAQAM UCHUN -->
     <div class="modal" id="modal">
         <div class="modal-content">
-
             <button class="close" id="closeBtn">×</button>
-
             <h2 class="modal-title">
                 Masterklassga qatnashish uchun telefon raqamingizni qoldiring
             </h2>
-
             <form id="form">
-
                 <input type="tel" id="phone" placeholder="+998 90 123 45 67" maxlength="18" required>
-
                 <p class="error" id="phoneError">
-                    Telefon raqamni to'g'ri kiriting
+                    Telefon raqamni to‘g‘ri kiriting (masalan: +998 90 123 45 67)
                 </p>
-
                 <button type="submit" class="btn" id="submitBtn">
                     RO'YXATDAN O'TISH
                 </button>
-
             </form>
-
         </div>
     </div>
 
     <script>
-        /* ======================= TIMER ======================= */
-        let timeLeft = 59;
-        const timerEl = document.getElementById("timer");
-        let timerInterval;
-        let timerActive = true;
+        (function() {
+            // ==================== TIMER ====================
+            let timeLeft = 59;
+            const timerEl = document.getElementById("timer");
+            let timerInterval;
+            let timerActive = true;
 
-        function updateTimerDisplay() {
-            if (!timerActive) return;
-
-            const mins = Math.floor(timeLeft / 60);
-            const secs = timeLeft % 60;
-
-            timerEl.innerHTML =
-                `${String(mins).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
-
-            if (timeLeft <= 0) {
-                clearInterval(timerInterval);
-                timerActive = false;
-                timerEl.innerHTML = "00:00";
-            } else {
-                timeLeft--;
-            }
-        }
-
-        timerInterval = setInterval(updateTimerDisplay, 1000);
-        updateTimerDisplay();
-
-        /* ======================= MODAL ======================= */
-        const modal = document.getElementById("modal");
-        const closeBtn = document.getElementById("closeBtn");
-        const bodyEl = document.body;
-
-        function openModal() {
-            if (!timerActive && timeLeft <= 0) {
-                alert("Vaqt tugadi! Ro‘yxatdan o‘tish yopildi.");
-                return;
+            function updateTimerDisplay() {
+                if (!timerActive) return;
+                const mins = Math.floor(timeLeft / 60);
+                const secs = timeLeft % 60;
+                timerEl.innerHTML = `${String(mins).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    timerActive = false;
+                    timerEl.innerHTML = "00:00";
+                } else {
+                    timeLeft--;
+                }
             }
 
-            modal.style.display = "flex";
-            bodyEl.style.overflow = "hidden";
+            timerInterval = setInterval(updateTimerDisplay, 1000);
+            updateTimerDisplay();
 
-            if (typeof fbq !== "undefined") {
-                fbq("track", "InitiateCheckout");
-            }
-        }
+            // ==================== MODAL ====================
+            const modal = document.getElementById("modal");
+            const closeBtn = document.getElementById("closeBtn");
+            const bodyEl = document.body;
 
-        function closeModal() {
-            modal.style.display = "none";
-            bodyEl.style.overflow = "auto";
-        }
-
-        /* ======================= ONE TIME AUTO OPEN ======================= */
-        let modalAutoOpened = false;
-
-        document.addEventListener("click", function (e) {
-
-            // modal ichida bosilsa ishlamasin
-            if (
-                e.target.closest(".modal-content") ||
-                e.target.closest("#closeBtn")
-            ) {
-                return;
+            // Modalni ochish funktsiyasi
+            function openModal() {
+                if (!timerActive && timeLeft <= 0) {
+                    alert("Vaqt tugadi! Ro‘yxatdan o‘tish yopildi.");
+                    return;
+                }
+                modal.style.display = "flex";
+                bodyEl.style.overflow = "hidden";
+                if (typeof fbq !== "undefined") {
+                    fbq("track", "InitiateCheckout");
+                }
             }
 
-            // faqat 1 marta avtomatik ochiladi
-            if (!modalAutoOpened) {
-                modalAutoOpened = true;
-                openModal();
+            function closeModal() {
+                modal.style.display = "none";
+                bodyEl.style.overflow = "auto";
             }
-        });
 
-        /* ======================= REGISTER BUTTONS ======================= */
-        document.querySelectorAll(".registerBtn").forEach(btn => {
-            btn.addEventListener("click", function (e) {
-                e.preventDefault();
+            // 1) TUGMA BOSILGANDA (asosiy)
+            const registerBtn = document.querySelector(".registerBtn");
+            if (registerBtn) {
+                registerBtn.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    openModal();
+                });
+            }
+
+            // 2) EKRANDA ISTALGAN JOYGA BOSILGANDAAAAA (to'liq sahifa)
+            document.addEventListener("click", function(e) {
+                // Agar modal allaqachon ochiq bo'lsa qayta ochmaymiz
+                if (modal.style.display === "flex") return;
+                
+                // Tugma bosilganda openModal ishlaydi, lekin tugma ham document ichida,
+                // shuning uchun ikki marta ochilmasligi uchun event targetni tekshirish shart emas,
+                // faqat modal yopiq bo'lsa ochamiz.
                 openModal();
             });
-        });
 
-        /* ======================= CLOSE MODAL ======================= */
-        closeBtn.addEventListener("click", closeModal);
-
-        modal.addEventListener("click", function (e) {
-            if (e.target === modal) {
-                closeModal();
-            }
-        });
-
-        /* ======================= PHONE FORMAT ======================= */
-        const phoneInput = document.getElementById("phone");
-
-        phoneInput.addEventListener("input", function () {
-
-            let raw = this.value.replace(/\D/g, "");
-
-            if (raw.startsWith("998")) {
-                raw = raw.substring(3);
-            }
-
-            raw = raw.substring(0, 9);
-
-            let formatted = "+998 ";
-
-            if (raw.length > 0) formatted += raw.substring(0, 2);
-            if (raw.length >= 3) formatted += " " + raw.substring(2, 5);
-            if (raw.length >= 6) formatted += " " + raw.substring(5, 7);
-            if (raw.length >= 8) formatted += " " + raw.substring(7, 9);
-
-            this.value = formatted.trim();
-        });
-
-        phoneInput.addEventListener("focus", function () {
-            if (this.value === "") this.value = "+998 ";
-        });
-
-        phoneInput.addEventListener("blur", function () {
-            if (this.value === "+998") this.value = "";
-        });
-
-        /* ======================= FORM ======================= */
-        const form = document.getElementById("form");
-        const nameInput = document.getElementById("name");
-        const nameError = document.getElementById("nameError");
-        const phoneError = document.getElementById("phoneError");
-        const submitBtn = document.getElementById("submitBtn");
-
-        const SHEET_URL =
-            "https://script.google.com/macros/s/AKfycbyol0tp71woGCtJma4LD_wnp0epomoAQsE3DGhh6zHgIj_r6ry_YPRpiR6KOSeOqPuC/exec";
-
-        function validateForm() {
-            let isValid = true;
-
-            const nameVal = nameInput.value.trim();
-
-            if (nameVal.length < 2) {
-                nameError.style.display = "block";
-                nameInput.style.borderColor = "#d32f2f";
-                isValid = false;
-            } else {
-                nameError.style.display = "none";
-                nameInput.style.borderColor = "#e0e0e0";
-            }
-
-            let phoneRaw = phoneInput.value.replace(/\D/g, "");
-
-            if (phoneRaw.startsWith("998")) {
-                phoneRaw = phoneRaw.substring(3);
-            }
-
-            if (phoneRaw.length !== 9) {
-                phoneError.style.display = "block";
-                phoneInput.style.borderColor = "#d32f2f";
-                isValid = false;
-            } else {
-                phoneError.style.display = "none";
-                phoneInput.style.borderColor = "#e0e0e0";
-            }
-
-            return isValid;
-        }
-
-        form.addEventListener("submit", async function (e) {
-            e.preventDefault();
-
-            if (!validateForm()) return;
-
-            if (!timerActive && timeLeft <= 0) {
-                alert("Vaqt tugadi!");
-                return;
-            }
-
-            const name = nameInput.value.trim();
-
-            let phoneDigits = phoneInput.value.replace(/\D/g, "");
-
-            if (phoneDigits.startsWith("998")) {
-                phoneDigits = phoneDigits.substring(3);
-            }
-
-            const fullPhone = "+998" + phoneDigits;
-
-            submitBtn.disabled = true;
-            submitBtn.innerText = "Yuborilmoqda...";
-
-            const formData = new URLSearchParams();
-            formData.append("name", name);
-            formData.append("phone", fullPhone);
-            formData.append("date", new Date().toLocaleString("uz-UZ"));
-
-            try {
-
-                await fetch(SHEET_URL, {
-                    method: "POST",
-                    mode: "no-cors",
-                    body: formData.toString()
+            // Modalni yopish
+            if (closeBtn) {
+                closeBtn.addEventListener("click", function(e) {
+                    e.stopPropagation();
+                    closeModal();
                 });
-
-                await fetch("https://ad.ketodieta.uz/ads", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/x-www-form-urlencoded"
-                    },
-                    body: new URLSearchParams({
-                        phone: fullPhone,
-                        source: "direct",
-                        _token: "napnxkDOrNCkZIrqdiq1E1R1jrpi93dSFNJ9pBit"
-                    })
-                });
-
-                if (typeof fbq !== "undefined") {
-                    fbq("track", "Lead");
+            }
+            
+            // Modal foniga bosganda yopish
+            modal.addEventListener("click", function(e) {
+                if (e.target === modal) {
+                    closeModal();
                 }
+            });
 
-                if (navigator.vibrate) navigator.vibrate(100);
+            // ESC tugmasi bilan yopish
+            document.addEventListener("keydown", function(e) {
+                if (e.key === "Escape" && modal.style.display === "flex") {
+                    closeModal();
+                }
+            });
 
-                closeModal();
-                window.location.href = "success.html";
+            // ==================== TELEFON FORMAT ====================
+            const phoneInput = document.getElementById("phone");
+            const phoneError = document.getElementById("phoneError");
 
-            } catch (error) {
-                console.error(error);
-
-                alert("Xatolik yuz berdi");
-
-                submitBtn.disabled = false;
-                submitBtn.innerText = "RO'YXATDAN O'TISH";
-            }
-        });
-
-        /* ======================= EXIT INTENT ======================= */
-        let exitIntentTriggered = false;
-
-        function handleExitIntent() {
-            if (exitIntentTriggered) return;
-
-            if (modal.style.display !== "flex") {
-                exitIntentTriggered = true;
-
-                setTimeout(() => {
-                    if (modal.style.display !== "flex" && timeLeft > 0) {
-                        openModal();
+            if (phoneInput) {
+                phoneInput.addEventListener("input", function() {
+                    let raw = this.value.replace(/\D/g, "");
+                    if (raw.startsWith("998")) {
+                        raw = raw.substring(3);
                     }
-                }, 300);
+                    raw = raw.substring(0, 9);
+                    let formatted = "+998 ";
+                    if (raw.length > 0) formatted += raw.substring(0, 2);
+                    if (raw.length >= 3) formatted += " " + raw.substring(2, 5);
+                    if (raw.length >= 6) formatted += " " + raw.substring(5, 7);
+                    if (raw.length >= 8) formatted += " " + raw.substring(7, 9);
+                    this.value = formatted.trim();
+                });
+
+                phoneInput.addEventListener("focus", function() {
+                    if (this.value === "") this.value = "+998 ";
+                });
+
+                phoneInput.addEventListener("blur", function() {
+                    if (this.value === "+998") this.value = "";
+                });
             }
-        }
 
-        document.addEventListener("mouseleave", function (e) {
-            if (e.clientY <= 0) handleExitIntent();
-        });
+            // ==================== FORMA VALIDATSIYA (faqat telefon) ====================
+            const form = document.getElementById("form");
+            const submitBtn = document.getElementById("submitBtn");
+            const SHEET_URL = "https://script.google.com/macros/s/AKfycbyol0tp71woGCtJma4LD_wnp0epomoAQsE3DGhh6zHgIj_r6ry_YPRpiR6KOSeOqPuC/exec";
 
-        document.addEventListener("touchmove", function (e) {
-            if (e.touches[0].clientY < 20) handleExitIntent();
-        }, { passive: true });
+            function validateForm() {
+                let isValid = true;
+                
+                if (phoneInput) {
+                    let phoneRaw = phoneInput.value.replace(/\D/g, "");
+                    if (phoneRaw.startsWith("998")) {
+                        phoneRaw = phoneRaw.substring(3);
+                    }
+                    if (phoneRaw.length !== 9) {
+                        if (phoneError) phoneError.style.display = "block";
+                        phoneInput.style.borderColor = "#d32f2f";
+                        isValid = false;
+                    } else {
+                        if (phoneError) phoneError.style.display = "none";
+                        phoneInput.style.borderColor = "#e0e0e0";
+                    }
+                }
+                return isValid;
+            }
 
-        /* ======================= PRELOAD ======================= */
-        new Image().src = "./madina.png";
+            if (form) {
+                form.addEventListener("submit", async function(e) {
+                    e.preventDefault();
+                    if (!validateForm()) return;
+                    if (!timerActive && timeLeft <= 0) {
+                        alert("Vaqt tugadi!");
+                        return;
+                    }
 
+                    let phoneDigits = phoneInput.value.replace(/\D/g, "");
+                    if (phoneDigits.startsWith("998")) {
+                        phoneDigits = phoneDigits.substring(3);
+                    }
+                    const fullPhone = "+998" + phoneDigits;
 
+                    if (submitBtn) {
+                        submitBtn.disabled = true;
+                        submitBtn.innerText = "Yuborilmoqda...";
+                    }
 
+                    const formData = new URLSearchParams();
+                    formData.append("name", "Masterclass ishtirokchi");
+                    formData.append("phone", fullPhone);
+                    formData.append("date", new Date().toLocaleString("uz-UZ"));
 
+                    try {
+                        await fetch(SHEET_URL, {
+                            method: "POST",
+                            mode: "no-cors",
+                            body: formData.toString()
+                        });
 
+                        await fetch("https://ad.ketodieta.uz/ads", {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/x-www-form-urlencoded"
+                            },
+                            body: new URLSearchParams({
+                                phone: fullPhone,
+                                source: "direct",
+                                _token: "napnxkDOrNCkZIrqdiq1E1R1jrpi93dSFNJ9pBit"
+                            })
+                        });
 
+                        if (typeof fbq !== "undefined") {
+                            fbq("track", "Lead");
+                        }
 
+                        if (navigator.vibrate) navigator.vibrate(100);
+                        closeModal();
+                        window.location.href = "success.html";
 
+                    } catch (error) {
+                        console.error(error);
+                        alert("Xatolik yuz berdi");
+                        if (submitBtn) {
+                            submitBtn.disabled = false;
+                            submitBtn.innerText = "RO'YXATDAN O'TISH";
+                        }
+                    }
+                });
+            }
 
-
-
-
-
-
+            // Rasmni preload
+            new Image().src = "./madina.png";
+        })();
 
         
     </script>
