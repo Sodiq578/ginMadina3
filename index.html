@@ -679,8 +679,34 @@ fbq('track', 'PageView');
     </div>
 
  
+<div class="menu">
+  <a href="index.html">Home</a>
+  <a href="pages1/index.html">Pages1</a>
+  <a href="pages3/index.html">Pages3</a>
+  <a href="gapes2/index.html">Gapes2</a>
+</div>
 
- 
+<style>
+.menu{
+  display:flex;
+  gap:10px;
+  padding:10px;
+  flex-wrap:wrap;
+}
+.menu a{
+  padding:8px 14px;
+  background:#111;
+  color:#fff;
+  text-decoration:none;
+  border-radius:8px;
+  font:600 14px sans-serif;
+  transition:.3s;
+}
+.menu a:hover{
+  background:#ffb800;
+  color:#000;
+}
+</style>
 
     <!-- MODAL - FAQAT TELEFON RAQAM UCHUN -->
     <div class="modal" id="modal">
