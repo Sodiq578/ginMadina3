@@ -679,40 +679,27 @@ fbq('track', 'PageView');
     </div>
 
 
-    <div id="menuBox" style="
-  display: none;
-  flex-direction: column;
-  gap: 12px;
-  width: 260px;
-  padding: 20px;
-  margin: 50px auto;
+  <div id="menuBox" style="
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  font-family: Arial, sans-serif;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 999;
 ">
-
-  <a href="index.html" style="padding:12px;text-align:center;text-decoration:none;background:#f0f0f0;color:#333;border-radius:8px;font-weight:600;">Home</a>
-  <a href="pages1/index.html" style="padding:12px;text-align:center;text-decoration:none;background:#f0f0f0;color:#333;border-radius:8px;font-weight:600;">Pages 1</a>
-  <a href="pages2/index.html" style="padding:12px;text-align:center;text-decoration:none;background:#f0f0f0;color:#333;border-radius:8px;font-weight:600;">Pages 2</a>
-  <a href="pages3/index.html" style="padding:12px;text-align:center;text-decoration:none;background:#f0f0f0;color:#333;border-radius:8px;font-weight:600;">Pages 3</a>
-  <a href="success.html" style="padding:12px;text-align:center;text-decoration:none;background:#f0f0f0;color:#333;border-radius:8px;font-weight:600;">Success</a>
-
+  <a href="index.html">Home</a><br>
+  <a href="pages1/index.html">Pages 1</a><br>
+  <a href="pages2/index.html">Pages 2</a><br>
+  <a href="pages3/index.html">Pages 3</a><br>
+  <a href="success.html">Success</a>
 </div>
 
-<script>
-  let box = document.getElementById("menuBox");
-
-  document.addEventListener("keydown", function(e) {
-    if (e.key.toLowerCase() === "i") {
-      if (box.style.display === "flex") {
-        box.style.display = "none";   // yopadi
-      } else {
-        box.style.display = "flex";   // ochadi
-      }
-    }
-  });
-</script>
+ 
 
     <!-- MODAL - FAQAT TELEFON RAQAM UCHUN -->
     <div class="modal" id="modal">
